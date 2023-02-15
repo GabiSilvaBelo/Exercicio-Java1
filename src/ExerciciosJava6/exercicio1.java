@@ -18,6 +18,7 @@ public class exercicio1 {
 		if (numero > 10) {
 			System.out.println("\nNúmero não encontrado");
 		}
-
+        for (x=0;x<10;x++)
+        	System.out.println("\nNúmero não encontrado");
 	}
 }
