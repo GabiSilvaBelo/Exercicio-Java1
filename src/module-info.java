@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author vinil
- *
- */
-module ProjetoGen {
-}
