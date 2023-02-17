@@ -9,7 +9,7 @@ public class exercicio1 {
 
 	public static void main(String[] args) {
 
-        Queue<String> nomeClientes = new LinkedList<>(); 
+        Queue<String> fila = new LinkedList<>(); 
         
         Scanner leia = new Scanner(System.in); 
         
@@ -29,26 +29,26 @@ public class exercicio1 {
                 case 1:
                     System.out.print("\nEntre com o nome do(a) cliente: ");
                     String nomeDoCliente = leia.nextLine();
-                    nomeClientes.offer(nomeDoCliente); 
+                    fila.offer(nomeDoCliente); 
                     System.out.println("\nCliente " + nomeDoCliente + " adicionado(a) a lista.");
                     break;
                     
                 case 2:
-                    if (nomeClientes.isEmpty()) {
+                    if (fila.isEmpty()) {
                         System.out.println("\nA lista está vazia.");
                     } else {
                         System.out.println("\nCliente adicionado(a) na lista:");
-                        for (String cliente : nomeClientes) {
+                        for (String cliente : fila) {
                             System.out.println(cliente);
                         }
                     }
                     break;
                     
                 case 3:
-                    if (nomeClientes.isEmpty()) {
+                    if (fila.isEmpty()) {
                         System.out.println("\nA lista está vazia.");
                     } else {
-                        String removerCliente = nomeClientes.poll();
+                        String removerCliente = fila.poll();
                         System.out.println("\nCliente " + removerCliente + " removido(a) da lista.");
                     }
                     break;
